@@ -1,0 +1,33 @@
+/* src/components/TechniqueCard.css */
+
+.technique-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .technique-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .technique-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .tag {
+    font-size: 10px;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2px 5px;
+  }
+  

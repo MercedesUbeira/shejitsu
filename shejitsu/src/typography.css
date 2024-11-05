@@ -1,0 +1,64 @@
+/* Global Typography Styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Title/Header 1 */
+  .h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  /* Header 2 */
+  .h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  /* Header 3 */
+  .h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  /* Header 4 */
+  .h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  /* Body Text */
+  .body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  /* Highlighted Text */
+  .highlight {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  /* Button Text (Full-width Buttons) */
+  .button-large {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  /* Button Text (Small Buttons) */
+  .button-small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,14 @@
+/* src/components/Header.css */
+
+.header {
+    height: 60px;
+    background-color: #00356B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    max-height: 40px;
+  }
+  
