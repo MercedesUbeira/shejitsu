@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Closed Guard Essentials",
+      "description": "Learn key closed guard techniques to control and attack from the bottom position.",
+      "longDescription": "Closed Guard Essentials covers foundational techniques in Brazilian Jiu-Jitsu for beginners. You'll learn how to control an opponent from the closed guard, develop attacks like arm drags, kimuras, and sweeps, and maintain a dominant position. This course includes detailed breakdowns, drilling sequences, and common mistakes to avoid.",
+      "level": "White Belt",
+      "rating": 4.8,
+      "progress": 50,
+      "image": "path-to-image1.jpg"
+    },
+    {
+      "title": "Sweeps and Escapes",
+      "description": "Master the art of sweeps and escapes from various positions.",
+      "longDescription": "This course dives into fundamental sweeps and escapes essential for improving your bottom game. You'll learn techniques to transition from defense to offense, including scissor sweeps, flower sweeps, and hip escapes. Perfect for practitioners aiming to build a well-rounded guard game and escape bad positions confidently.",
+      "level": "Blue Belt",
+      "rating": 4.5,
+      "progress": 75,
+      "image": "path-to-image2.jpg"
+    },
+    {
+      "title": "Guard Passing Mastery",
+      "description": "Develop a comprehensive guard passing game from different positions.",
+      "longDescription": "Guard Passing Mastery focuses on various strategies and techniques to effectively pass an opponent's guard. From knee slice passes to stack passes, this course covers a range of techniques suited for different guard styles. This detailed course will help practitioners refine their passing skills, control opponents, and set up submissions.",
+      "level": "Purple Belt",
+      "rating": 4.9,
+      "progress": 30,
+      "image": "path-to-image3.jpg"
+    }
+  ]
+  
