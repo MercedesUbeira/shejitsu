@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import TabSwitcher from '../components/TabSwitcher';
-import CourseCard from '../components/CourseCard';
+import CoursesList from '../components/CoursesList'; // Import CoursesList instead of CourseCard
 import FilterPanel from '../components/FilterPanel';
 
 export default function CoursesPage() {
@@ -15,16 +15,9 @@ export default function CoursesPage() {
         onFilterClick={() => setFilterOpen(true)} // Open filter panel
       />
       <TabSwitcher selectedTab="courses" onSelectTab={() => {}} />
-      <div className="cards-container">
-        <CourseCard course={{
-          image: "/path-to-image.jpg",
-          title: "Closed Guard Essentials",
-          level: "White Belt",
-          description: "Learn key closed guard techniques.",
-          progress: 50,
-          rating: 4.8
-        }} />
-      </div>
+
+      {/* Use CoursesList here to load all courses */}
+      <CoursesList />
 
       {/* Filter Panel with Slide-up effect */}
       <FilterPanel isOpen={isFilterOpen} onClose={() => setFilterOpen(false)} />

@@ -3,6 +3,8 @@ import { FaStar, FaHeart } from 'react-icons/fa';
 import './CourseCard.css';
 
 export default function CourseCard({ course }) {
+  console.log("Course data in CourseCard:", course); // Log data for each card
+
   return (
     <div className="course-card">
       <img src={course.image} alt={course.title} className="course-image" />
