@@ -1,12 +1,10 @@
-/* src/components/CourseCard.css */
-
 .course-card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin-bottom: 10px;
-  position: relative; /* Added to enable absolute positioning within the card */
+  position: relative; 
 }
 
 .course-card img {
@@ -21,7 +19,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  background-color: rgba(0, 0, 0, 0.6); /* Background to make text more readable */
+  background-color: rgba(0, 0, 0, 0.6); 
   color: #fff;
   padding: 4px 8px;
   border-radius: 12px;
