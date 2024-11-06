@@ -1,4 +1,3 @@
-// src/components/TechniqueCard.jsx
 import { FaEye, FaHeart } from 'react-icons/fa';
 import './TechniqueCard.css';
 

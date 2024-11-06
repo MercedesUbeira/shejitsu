@@ -7,6 +7,10 @@ export default function CourseCard({ course }) {
 
   return (
     <div className="course-card">
+      <div className="course-card-header">
+        <span>{course.rating} <FaStar /></span>
+        <FaHeart />
+      </div>
       <img src={course.image} alt={course.title} className="course-image" />
       <div className="course-info">
         <h3>{course.title}</h3>
@@ -16,8 +20,6 @@ export default function CourseCard({ course }) {
           <div style={{ width: `${course.progress}%` }}></div>
         </div>
       </div>
-      <span>{course.rating} <FaStar /></span>
-      <FaHeart />
     </div>
   );
 }

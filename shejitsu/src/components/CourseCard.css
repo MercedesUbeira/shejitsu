@@ -1,38 +1,52 @@
 /* src/components/CourseCard.css */
 
 .course-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .course-card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .course-info h3 {
-    font-size: 18px;
-    margin: 5px 0;
-  }
-  
-  .level-tag {
-    font-size: 12px;
-    color: #666;
-  }
-  
-  .progress-bar {
-    background-color: #ddd;
-    border-radius: 4px;
-    height: 8px;
-    overflow: hidden;
-    margin-top: 8px;
-  }
-  
-  .progress-bar div {
-    background-color: #4caf50;
-    height: 100%;
-  }
-  
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative; /* Added to enable absolute positioning within the card */
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.course-card-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.6); /* Background to make text more readable */
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.course-card .course-info h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.level-tag {
+  font-size: 12px;
+  color: #666;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar div {
+  background-color: #4caf50;
+  height: 100%;
+}
