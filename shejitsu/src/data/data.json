@@ -1,61 +1,72 @@
 {
-    "courses": {
-      "course1": {
-        "title": "Closed Guard Essentials",
-        "description": "Learn key closed guard techniques to control and attack from the bottom position.",
-        "longDescription": "Closed Guard Essentials covers foundational techniques in Brazilian Jiu-Jitsu for beginners. You'll learn how to control an opponent from the closed guard, develop attacks like arm drags, kimuras, and sweeps, and maintain a dominant position. This course includes detailed breakdowns, drilling sequences, and common mistakes to avoid.",
-        "level": "White Belt",
-        "rating": 4.8,
-        "progress": 50,
-        "image": "https://breakawayjiujitsu.com/wp-content/uploads/2023/04/women-in-jiu-jitsu.jpg"
-      },
-      "course2": {
-        "title": "Sweeps and Escapes",
-        "description": "Master the art of sweeps and escapes from various positions.",
-        "longDescription": "This course dives into fundamental sweeps and escapes essential for improving your bottom game. You'll learn techniques to transition from defense to offense, including scissor sweeps, flower sweeps, and hip escapes. Perfect for practitioners aiming to build a well-rounded guard game and escape bad positions confidently.",
-        "level": "Blue Belt",
-        "rating": 4.5,
-        "progress": 75,
-        "image": "https://b3007865.smushcdn.com/3007865/wp-content/uploads/2024/02/womens-bjj.jpg?lossy=1&strip=1&webp=1"
-      },
-      "course3": {
-        "title": "Guard Passing Mastery",
-        "description": "Develop a comprehensive guard passing game from different positions.",
-        "longDescription": "Guard Passing Mastery focuses on various strategies and techniques to effectively pass an opponent's guard. From knee slice passes to stack passes, this course covers a range of techniques suited for different guard styles. This detailed course will help practitioners refine their passing skills, control opponents, and set up submissions.",
-        "level": "Purple Belt",
-        "rating": 4.9,
-        "progress": 30,
-        "image": "https://v.wpimg.pl/aml0c3UuTgwNUhUAeg5DGU4KQVo8V01PGRJZEXpEU1VcSExXewIRBAFXTUM5WlddWgBbAWNBVkBBAVUFY0FTWlwBWhw3BwAXFVwKWSYeCAhBWgpGeB8IGR9FTVklEkMQ"
-      }
+  "courses": {
+    "course1": {
+      "title": "Closed Guard Essentials",
+      "description": "Learn key closed guard techniques to control and attack from the bottom position.",
+      "longDescription": "Closed Guard Essentials covers foundational techniques in Brazilian Jiu-Jitsu for beginners. You'll learn how to control an opponent from the closed guard, develop attacks like arm drags, kimuras, and sweeps, and maintain a dominant position. This course includes detailed breakdowns, drilling sequences, and common mistakes to avoid.",
+      "level": "White Belt",
+      "rating": 4.8,
+      "progress": 50,
+      "position": "Guard",
+      "style": "Gi",
+      "image": "https://breakawayjiujitsu.com/wp-content/uploads/2023/04/women-in-jiu-jitsu.jpg"
     },
-    "techniques": {
-      "technique1": {
-        "title": "Kimura",
-        "description": "A shoulder lock that can be applied from the closed guard.",
-        "level": "White Belt",
-        "viewers": 10000,
-        "time": "2:00",
-        "tags": ["Beginners", "Shoulder Lock", "Gi", "Josie Davis"],
-        "image": "https://gbjj.b-cdn.net/wp-content/uploads/2023/06/kimura-lock.png"
-      },
-      "technique2": {
-        "title": "Triangle Choke",
-        "description": "A choke submission from the guard, using legs to trap the opponent.",
-        "level": "Blue Belt",
-        "viewers": 8500,
-        "time": "1:45",
-        "tags": ["Intermediate", "Choke", "No Gi", "Alex Kim"],
-        "image": "https://www.shutterstock.com/image-photo/woman-camouflage-practicing-brazilian-jiujitsu-600nw-97014605.jpg"
-      },
-      "technique3": {
-        "title": "Armbar from Guard",
-        "description": "A powerful arm lock submission from the guard position.",
-        "level": "Blue Belt",
-        "viewers": 12000,
-        "time": "1:30",
-        "tags": ["Intermediate", "Arm Lock", "Gi", "Emily Turner"],
-        "image": "https://media.istockphoto.com/id/186197048/photo/armbar-tap-out.jpg?s=612x612&w=0&k=20&c=zX82kPl-c-teiRurHJw1XCg2ibpsOP4Vvg2YWQss7uE="
-      }
+    "course2": {
+      "title": "Sweeps and Escapes",
+      "description": "Master the art of sweeps and escapes from various positions.",
+      "longDescription": "This course dives into fundamental sweeps and escapes essential for improving your bottom game. You'll learn techniques to transition from defense to offense, including scissor sweeps, flower sweeps, and hip escapes. Perfect for practitioners aiming to build a well-rounded guard game and escape bad positions confidently.",
+      "level": "Blue Belt",
+      "rating": 4.5,
+      "progress": 75,
+      "position": "Mount",
+      "style": "Gi",
+      "image": "https://b3007865.smushcdn.com/3007865/wp-content/uploads/2024/02/womens-bjj.jpg?lossy=1&strip=1&webp=1"
+    },
+    "course3": {
+      "title": "Guard Passing Mastery",
+      "description": "Develop a comprehensive guard passing game from different positions.",
+      "longDescription": "Guard Passing Mastery focuses on various strategies and techniques to effectively pass an opponent's guard. From knee slice passes to stack passes, this course covers a range of techniques suited for different guard styles. This detailed course will help practitioners refine their passing skills, control opponents, and set up submissions.",
+      "level": "Purple Belt",
+      "rating": 4.9,
+      "progress": 30,
+      "position": "Side Control",
+      "style": "Gi",
+      "image": "https://v.wpimg.pl/aml0c3UuTgwNUhUAeg5DGU4KQVo8V01PGRJZEXpEU1VcSExXewIRBAFXTUM5WlddWgBbAWNBVkBBAVUFY0FTWlwBWhw3BwAXFVwKWSYeCAhBWgpGeB8IGR9FTVklEkMQ"
+    }
+  },
+  "techniques": {
+    "technique1": {
+      "title": "Kimura",
+      "description": "A shoulder lock that can be applied from the closed guard.",
+      "level": "White Belt",
+      "viewers": 10000,
+      "time": "2:00",
+      "tags": ["Beginners", "Shoulder Lock", "Gi", "Josie Davis"],
+      "position": "Guard",
+      "style": "Gi",
+      "image": "https://gbjj.b-cdn.net/wp-content/uploads/2023/06/kimura-lock.png"
+    },
+    "technique2": {
+      "title": "Triangle Choke",
+      "description": "A choke submission from the guard, using legs to trap the opponent.",
+      "level": "Blue Belt",
+      "viewers": 8500,
+      "time": "1:45",
+      "tags": ["Intermediate", "Choke", "No Gi", "Alex Kim"],
+      "position": "Guard",
+      "style": "No-Gi",
+      "image": "https://www.shutterstock.com/image-photo/woman-camouflage-practicing-brazilian-jiujitsu-600nw-97014605.jpg"
+    },
+    "technique3": {
+      "title": "Armbar from Guard",
+      "description": "A powerful arm lock submission from the guard position.",
+      "level": "Blue Belt",
+      "viewers": 12000,
+      "time": "1:30",
+      "tags": ["Intermediate", "Arm Lock", "Gi", "Emily Turner"],
+      "position": "Guard",
+      "style": "Gi",
+      "image": "https://media.istockphoto.com/id/186197048/photo/armbar-tap-out.jpg?s=612x612&w=0&k=20&c=zX82kPl-c-teiRurHJw1XCg2ibpsOP4Vvg2YWQss7uE="
     }
   }
-  
+}

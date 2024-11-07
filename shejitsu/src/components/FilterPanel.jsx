@@ -1,28 +1,26 @@
-// src/components/FilterPanel.jsx
 import { useState } from 'react';
 import './FilterPanel.css';
 
-export default function FilterPanel({ isOpen, onClose }) {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedPositions, setSelectedPositions] = useState([]);
+export default function FilterPanel({ isOpen, onClose, onApplyFilters }) {
   const [selectedBelts, setSelectedBelts] = useState([]);
+  const [selectedPositions, setSelectedPositions] = useState([]);
+  const [selectedStyles, setSelectedStyles] = useState([]);
+  const [selectedRatings, setSelectedRatings] = useState([]);
 
-  const toggleCategory = (category) => {
-    setSelectedCategories((prev) =>
-      prev.includes(category) ? prev.filter((item) => item !== category) : [...prev, category]
+  const toggleSelection = (selection, setSelection, value) => {
+    setSelection(prev =>
+      prev.includes(value) ? prev.filter(item => item !== value) : [...prev, value]
     );
   };
 
-  const togglePosition = (position) => {
-    setSelectedPositions((prev) =>
-      prev.includes(position) ? prev.filter((item) => item !== position) : [...prev, position]
-    );
-  };
-
-  const toggleBelt = (belt) => {
-    setSelectedBelts((prev) =>
-      prev.includes(belt) ? prev.filter((item) => item !== belt) : [...prev, belt]
-    );
+  const applyFilters = () => {
+    onApplyFilters({
+      belts: selectedBelts,
+      positions: selectedPositions,
+      styles: selectedStyles,
+      ratings: selectedRatings,
+    });
+    onClose(); // Close the filter panel
   };
 
   return (
@@ -33,47 +31,64 @@ export default function FilterPanel({ isOpen, onClose }) {
       </div>
 
       <div className="filter-options">
-        <div className="filter-category">
-          <h3>Categories</h3>
-          {["Chokes", "Armlocks", "Leg Locks", "Sweeps", "Takedowns", "Escapes"].map((category) => (
+        {/* Belt Level Filter */}
+        <div className="filter-belt">
+          <h3>Belt Level</h3>
+          {["White Belt", "Blue Belt", "Purple Belt", "Brown Belt", "Black Belt"].map(belt => (
             <button
-              key={category}
-              className={selectedCategories.includes(category) ? 'selected' : ''}
-              onClick={() => toggleCategory(category)}
+              key={belt}
+              className={selectedBelts.includes(belt) ? 'selected' : ''}
+              onClick={() => toggleSelection(selectedBelts, setSelectedBelts, belt)}
             >
-              {category}
+              {belt}
             </button>
           ))}
         </div>
 
+        {/* Predominant Position Filter */}
         <div className="filter-position">
-          <h3>Position Type</h3>
-          {["Guard", "Mount", "Side Control", "Back Control"].map((position) => (
+          <h3>Predominant Position</h3>
+          {["Guard", "Mount", "Side Control", "Back Control"].map(position => (
             <button
               key={position}
               className={selectedPositions.includes(position) ? 'selected' : ''}
-              onClick={() => togglePosition(position)}
+              onClick={() => toggleSelection(selectedPositions, setSelectedPositions, position)}
             >
               {position}
             </button>
           ))}
         </div>
 
-        <div className="filter-belt">
-          <h3>Belt Level</h3>
-          {["White Belt", "Blue Belt", "Purple Belt", "Brown Belt", "Black Belt"].map((belt) => (
+        {/* Fighting Style Filter */}
+        <div className="filter-style">
+          <h3>Fighting Style</h3>
+          {["Gi", "No-Gi", "Both"].map(style => (
             <button
-              key={belt}
-              className={selectedBelts.includes(belt) ? 'selected' : ''}
-              onClick={() => toggleBelt(belt)}
+              key={style}
+              className={selectedStyles.includes(style) ? 'selected' : ''}
+              onClick={() => toggleSelection(selectedStyles, setSelectedStyles, style)}
             >
-              {belt}
+              {style}
+            </button>
+          ))}
+        </div>
+
+        {/* Rating Filter */}
+        <div className="filter-rating">
+          <h3>Rating</h3>
+          {[5, 4, 3, 2, 1].map(rating => (
+            <button
+              key={rating}
+              className={selectedRatings.includes(rating) ? 'selected' : ''}
+              onClick={() => toggleSelection(selectedRatings, setSelectedRatings, rating)}
+            >
+              ⭐ {rating}
             </button>
           ))}
         </div>
       </div>
 
-      <button className="apply-filters" onClick={onClose}>Apply Filters</button>
+      <button className="apply-filters" onClick={applyFilters}>Apply Filters</button>
     </div>
   );
 }

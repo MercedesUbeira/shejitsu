@@ -1,0 +1,21 @@
+.item-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    gap: 20px;
+}
+
+.item-list h1 {
+    font-size: 1.5em;
+    color: #1d1d1d;
+    margin-bottom: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    .item-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}

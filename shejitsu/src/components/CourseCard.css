@@ -1,50 +1,85 @@
 .course-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin-bottom: 10px;
-  position: relative; 
-}
-
-.course-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.course-card-header {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background-color: rgba(0, 0, 0, 0.6); 
-  color: #fff;
-  padding: 4px 8px;
+  background-color: #ffffff;
   border-radius: 12px;
-  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 15px 0;
+  position: relative;
+  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
-.course-card .course-info h3 {
-  font-size: 18px;
-  margin: 5px 0;
+.course-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.course-info {
+  padding: 16px;
+}
+
+.course-info h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .level-tag {
-  font-size: 12px;
-  color: #666;
+  background-color: #f5f5f5;
+  color: #7d7d7d;
+  font-size: 0.8em;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+.course-info p {
+  font-size: 0.9em;
+  color: #4a4a4a;
+  margin: 8px 0 16px;
 }
 
 .progress-bar {
-  background-color: #ddd;
-  border-radius: 4px;
+  background-color: #e0e0e0;
   height: 8px;
+  border-radius: 4px;
   overflow: hidden;
+  position: relative;
   margin-top: 8px;
 }
 
 .progress-bar div {
-  background-color: #4caf50;
   height: 100%;
+  background-color: #4caf50;
+  width: 70%; 
+  border-radius: 4px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  position: absolute;
+  top: 12px;
+  right: 40px;
+  color: #ffffff;
+  background-color: #5a3e85;
+  padding: 3px 6px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 12px;
+  right: 90px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #5a3e85;
+  padding: 3px;
+  border-radius: 50%;
 }
