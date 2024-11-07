@@ -1,7 +1,7 @@
 // src/App.jsx
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
-import CoursesPage from './pages/CoursesPage';
+import CoursesPage from './pages/CoursesAndTechniquesPage';
 import './typography.css';
 
 
