@@ -1,4 +1,4 @@
-// src/components/TabSwitcher.jsx
+// Created by Mechii
 import "./TabSwitcher.css";
 
 export default function TabSwitcher({ selectedTab, onSelectTab }) {

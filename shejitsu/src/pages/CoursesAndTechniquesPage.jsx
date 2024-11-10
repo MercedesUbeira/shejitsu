@@ -1,6 +1,7 @@
+//Developed by Daniel and Mechii
 import { useState, useEffect } from 'react';
 import { ref, onValue } from "firebase/database";
-import { db } from "../firebase"; // Adjust this path if necessary based on your Firebase config location
+import { db } from "../firebase";
 import SearchBar from '../components/SearchBar';
 import TabSwitcher from '../components/TabSwitcher';
 import ItemList from '../components/ItemList';
@@ -14,7 +15,7 @@ export default function CoursesAndTechniquesPage() {
   const [searchTerm, setSearchTerm] = useState(''); // Stores the current search term
   const [filters, setFilters] = useState({}); // Stores active filters
 
-  // Handle tab switching
+  // The content is dynamicHandle tab switching
   const handleTabSwitch = (tab) => {
     setSelectedTab(tab);
     setFilters({});
@@ -103,7 +104,7 @@ export default function CoursesAndTechniquesPage() {
       <FilterPanel
         isOpen={isFilterOpen}
         onClose={() => setFilterOpen(false)}
-        onApplyFilters={setFilters} // Updates filters when applied from FilterPanel
+        onApplyFilters={setFilters} 
       />
     </div>
   );

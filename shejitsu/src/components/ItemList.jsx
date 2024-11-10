@@ -1,3 +1,4 @@
+//Created by Mechii
 import './ItemList.css';
 import CourseCard from "./CourseCard";
 import TechniqueCard from "./TechniqueCard";

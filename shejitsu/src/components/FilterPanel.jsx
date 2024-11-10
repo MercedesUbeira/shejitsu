@@ -1,3 +1,4 @@
+//Developed mainly by Mechi, worked together with Daniel to troubleshoot
 import { useState } from 'react';
 import './FilterPanel.css';
 
