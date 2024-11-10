@@ -1,8 +1,9 @@
-// src/firebase.js
+//Mechi 
+
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
-// Your Firebase configuration
+// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyC7A_ScEKHmqtJcxloDCxytZgXaC1cHpZk",
   authDomain: "shejitsu-f75f2.firebaseapp.com",
