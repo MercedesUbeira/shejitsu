@@ -20,7 +20,7 @@ export default function FilterPanel({ isOpen, onClose, onApplyFilters }) {
       styles: selectedStyles,
       ratings: selectedRatings,
     });
-    onClose(); // Close the filter panel
+    onClose();
   };
 
   return (
@@ -31,64 +31,51 @@ export default function FilterPanel({ isOpen, onClose, onApplyFilters }) {
       </div>
 
       <div className="filter-options">
-        {/* Belt Level Filter */}
-        <div className="filter-belt">
-          <h3>Belt Level</h3>
-          {["White Belt", "Blue Belt", "Purple Belt", "Brown Belt", "Black Belt"].map(belt => (
-            <button
-              key={belt}
-              className={selectedBelts.includes(belt) ? 'selected' : ''}
-              onClick={() => toggleSelection(selectedBelts, setSelectedBelts, belt)}
-            >
-              {belt}
-            </button>
-          ))}
-        </div>
-
-        {/* Predominant Position Filter */}
-        <div className="filter-position">
-          <h3>Predominant Position</h3>
-          {["Guard", "Mount", "Side Control", "Back Control"].map(position => (
-            <button
-              key={position}
-              className={selectedPositions.includes(position) ? 'selected' : ''}
-              onClick={() => toggleSelection(selectedPositions, setSelectedPositions, position)}
-            >
-              {position}
-            </button>
-          ))}
-        </div>
-
-        {/* Fighting Style Filter */}
-        <div className="filter-style">
-          <h3>Fighting Style</h3>
-          {["Gi", "No-Gi", "Both"].map(style => (
-            <button
-              key={style}
-              className={selectedStyles.includes(style) ? 'selected' : ''}
-              onClick={() => toggleSelection(selectedStyles, setSelectedStyles, style)}
-            >
-              {style}
-            </button>
-          ))}
-        </div>
-
-        {/* Rating Filter */}
-        <div className="filter-rating">
-          <h3>Rating</h3>
-          {[5, 4, 3, 2, 1].map(rating => (
-            <button
-              key={rating}
-              className={selectedRatings.includes(rating) ? 'selected' : ''}
-              onClick={() => toggleSelection(selectedRatings, setSelectedRatings, rating)}
-            >
-              ⭐ {rating}
-            </button>
-          ))}
-        </div>
+        <FilterSection
+          title="Belt Level"
+          options={["White Belt", "Blue Belt", "Purple Belt", "Brown Belt", "Black Belt"]}
+          selectedOptions={selectedBelts}
+          toggleOption={(belt) => toggleSelection(selectedBelts, setSelectedBelts, belt)}
+        />
+        <FilterSection
+          title="Predominant Position"
+          options={["Guard", "Mount", "Side Control", "Back Control"]}
+          selectedOptions={selectedPositions}
+          toggleOption={(position) => toggleSelection(selectedPositions, setSelectedPositions, position)}
+        />
+        <FilterSection
+          title="Fighting Style"
+          options={["Gi", "No-Gi", "Both"]}
+          selectedOptions={selectedStyles}
+          toggleOption={(style) => toggleSelection(selectedStyles, setSelectedStyles, style)}
+        />
+        <FilterSection
+          title="Rating"
+          options={[5, 4, 3, 2, 1]}
+          selectedOptions={selectedRatings}
+          toggleOption={(rating) => toggleSelection(selectedRatings, setSelectedRatings, rating)}
+          isRating={true}
+        />
       </div>
 
       <button className="apply-filters" onClick={applyFilters}>Apply Filters</button>
+    </div>
+  );
+}
+
+function FilterSection({ title, options, selectedOptions, toggleOption, isRating }) {
+  return (
+    <div className={`filter-${title.toLowerCase().replace(" ", "-")}`}>
+      <h3>{title}</h3>
+      {options.map(option => (
+        <button
+          key={option}
+          className={selectedOptions.includes(option) ? 'selected' : ''}
+          onClick={() => toggleOption(option)}
+        >
+          {isRating ? `⭐ ${option}` : option}
+        </button>
+      ))}
     </div>
   );
 }

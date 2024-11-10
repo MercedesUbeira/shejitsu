@@ -1,4 +1,4 @@
-// src/App.jsx
+// Created by React, updated by Mechii :D 
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
 import CoursesPage from './pages/CoursesAndTechniquesPage';

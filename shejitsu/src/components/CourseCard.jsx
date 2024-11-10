@@ -1,3 +1,4 @@
+//Created by Mechii
 import { FaStar, FaHeart } from 'react-icons/fa';
 import './CourseCard.css';
 

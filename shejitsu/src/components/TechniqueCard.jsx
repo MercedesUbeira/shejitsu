@@ -1,9 +1,9 @@
-// src/components/TechniqueCard.jsx
+//Created by Mechii
 import { FaHeart } from 'react-icons/fa';
 import './TechniqueCard.css';
 
 export default function TechniqueCard({ data }) {
-  // Ensure tags is an array to avoid map errors
+  // This converts the data into an array. We do this to avoid issues when maping throug it
   const tags = Array.isArray(data.tags) ? data.tags : [];
 
   return (
