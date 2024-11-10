@@ -1,5 +1,5 @@
-// src/components/Header.jsx
-import logo from '../assets/logo.png'; // Adjust the path if needed
+// Component created by Daniel
+import logo from '../assets/logo.png'; 
 import './Header.css';
 
 export default function Header() {
